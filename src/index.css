@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navbar-height: 68px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+
+.app-container {
+  height: 100dvh;
+}
+
+.upper-container > *,
+.lower-container > * {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.page-container {
+  min-height: max(100%, 700px);
+}
+
+.lower-container {
+  height: calc(100% - var(--navbar-height));
+  overflow-y: auto;
+  /* border: 1px solid green; */
+}
+
+footer {
+  height: 50px;
+}
+
+.mt-neg {
+  margin-top: -15px;
+}
