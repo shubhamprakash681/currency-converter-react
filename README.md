@@ -1,30 +1,81 @@
-# React + TypeScript + Vite
+# Currency Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fast and user-friendly currency converter web app built with React and Vite, providing real-time exchange rates for global currencies.
 
-Currently, two official plugins are available:
+💱 Convert currencies instantly! Try it here: https://currencyconverter.shubhamprakash681.in/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+✅ Real-Time Exchange Rates – Uses ExchangeRate-API for accurate, up-to-date currency conversions
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+✅ 160+ Global Currencies – Supports USD, EUR, GBP, JPY, INR, and many more
 
-- Configure the top-level `parserOptions` property like this:
+✅ Amount Calculation – Enter any amount to see precise conversions
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+✅ Currency Swap – Quickly reverse conversion direction with one click
+
+✅ Clean, Responsive UI – Works perfectly on all devices. Intuitive and easy-to-use interface.
+
+## How to use
+
+Select your base currency from the dropdown (e.g., USD).
+
+Choose your target currency (e.g., INR).
+
+Enter any amount in the input field.
+
+Click on Convert button to calculate and view the result.
+
+Click the swap button (↕️) to instantly reverse the conversion.
+
+## Tech Stack
+
+⚛️ React 18 with Vite (for ultra-fast development)
+
+🔄 ExchangeRate-API (https://www.exchangerate-api.com/) for live currency data
+
+🎨 Tailwind CSS for utility-first styling and responsive design
+
+## Installation & Setup
+
+Clone the repository:
+
+```bash
+    git clone https://github.com/shubhamprakash681/currency-converter-react.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Navigate to the project directory:
+
+```bash
+    cd currency-converter-react
+```
+
+Install dependencies:
+
+```bash
+  npm install
+```
+
+Run the development server:
+
+```bash
+  npm run dev
+```
+
+Open in browser:
+
+```bash
+  http://localhost:5173/
+```
+
+## Contributing
+
+Contributions are always welcome!
+
+## Deployment
+
+This project is deployed using Vercel.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
